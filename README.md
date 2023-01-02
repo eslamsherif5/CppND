@@ -4,6 +4,6 @@
 # How to use
 ```bash
 $ # ./docker-launch.sh <container-name> <image-name> <container-username>
-$ ./docker-launch.sh cppnd eslaaam3/cppnd:0.1 cppnd
+$ ./docker-launch.sh cppnd docker.io/eslaaam3/cppnd:0.1 cppnd
 ```
 

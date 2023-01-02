@@ -191,7 +191,8 @@ RUN git clone --recurse-submodules https://github.com/cpp-io2d/P0267_RefImpl \
     && cd P0267_RefImpl \
     && mkdir Debug && cd Debug \
     && cmake --config Debug "-DCMAKE_BUILD_TYPE=Debug" .. \
-    && cmake --build .
+    && cmake --build . \
+    && sudo make install
 
 # =============================================== #
 #          COMPILE ROUTE PLANNING PROJECT         #
@@ -201,10 +202,9 @@ WORKDIR /home/$USERNAME/workspace
 
 RUN git clone https://github.com/udacity/CppND-Route-Planning-Project.git --recurse-submodules \
     && cd CppND-Route-Planning-Project \
-    && mkdir build && cd build
-    #  \
-    # && cmake .. \
-    # && make
+    && mkdir build && cd build \
+    && cmake .. \
+    && make
 
 # ====================================== #
 #          ADD A NEW LAYER HERE          #
